@@ -1,7 +1,7 @@
-pipeline {
-  agent { label 'linux' }
-  options {
-    buildDiscarder(logRotator(numToKeepStr: '5'))
+#pipeline {
+  #agent { label 'linux' }
+  #options {
+    #buildDiscarder(logRotator(numToKeepStr: '5'))
   }
   environment {
     HEROKU_API_KEY = credentials('darinpope-heroku-api-key')
