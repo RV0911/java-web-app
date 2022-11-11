@@ -1,7 +1,6 @@
  pipeline {
-  #agent { label 'linux' }
-  #options {
-    #buildDiscarder(logRotator(numToKeepStr: '5'))
+   options {
+     buildDiscarder(logRotator(numToKeepStr: '5'))
   }
   environment {
     HEROKU_API_KEY = credentials('rv-heroku-apikey')
